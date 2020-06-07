@@ -22,6 +22,10 @@ earlier adventurers. The only exit is to the south."""),
 }
 
 
+for k_room, v_room in room.items():
+    print(v_room)
+
+
 # Link rooms together
 
 room['outside'].n_to = room['foyer']
@@ -33,9 +37,9 @@ room['narrow'].w_to = room['foyer']
 room['narrow'].n_to = room['treasure']
 room['treasure'].s_to = room['narrow']
 
-#
+
 # Main
-#
+
 
 # Make a new player object that is currently in the 'outside' room.
 
