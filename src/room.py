@@ -11,5 +11,5 @@ class Room:
         self.w_to = w_to
 
     def __str__(self):
-        res = f"Name: {self.name}, Description: {self.description}"
+        res = f"Room's Name: {self.name}\nRoom's Description: {self.description}"
         return res
