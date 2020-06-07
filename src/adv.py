@@ -22,12 +22,9 @@ earlier adventurers. The only exit is to the south."""),
 }
 
 
-for k_room, v_room in room.items():
-    print(v_room)
 
 
 # Link rooms together
-
 room['outside'].n_to = room['foyer']
 room['foyer'].s_to = room['outside']
 room['foyer'].n_to = room['overlook']
@@ -37,9 +34,23 @@ room['narrow'].w_to = room['foyer']
 room['narrow'].n_to = room['treasure']
 room['treasure'].s_to = room['narrow']
 
+# room['outside'].n_to = room['foyer']
+# room['foyer'].s_to = room['outside']
+# room['foyer'].n_to = room['overlook']
+# room['foyer'].e_to = room['narrow']
+# room['outside' ].n_to = room['foyer']
+# room['foyer'   ].s_to = room['outside']
+# room['foyer'   ].n_to = room['overlook']
+# room['foyer'   ].e_to = room['narrow']
+# room['overlook'].s_to = room['foyer']
+# room['narrow'].w_to = room['foyer']
+# room['narrow'].n_to = room['treasure']
+# room['narrow'  ].w_to = room['foyer']
+# room['narrow'  ].n_to = room['treasure']
+# room['treasure'].s_to = room['narrow']
+
 
 # Main
-
 
 # Make a new player object that is currently in the 'outside' room.
 
